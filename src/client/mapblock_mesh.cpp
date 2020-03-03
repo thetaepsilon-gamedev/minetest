@@ -1357,6 +1357,7 @@ void MapBlockMesh::updateCameraOffset(v3s16 camera_offset)
 	}
 }
 
+/*
 video::SColor encode_light(u16 light, u8 emissive_light)
 {
 	// Get components
@@ -1384,3 +1385,10 @@ video::SColor encode_light(u16 light, u8 emissive_light)
 	float b = (day + night) / 2;
 	return video::SColor(r, b, b, b);
 }
+*/
+video::SColor encode_light(u16 light, u8 e) {
+	u8 day = (light & 0xff);
+	u8 night = (light >> 8);
+	return video::SColor(255, day, night, e);
+}
+
