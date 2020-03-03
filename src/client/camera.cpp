@@ -590,6 +590,7 @@ void Camera::wield(const ItemStack &item)
 	}
 }
 
+/*
 void Camera::drawWieldedTool(irr::core::matrix4* translation)
 {
 	// Clear Z buffer so that the wielded tool stay in front of world geometry
@@ -615,6 +616,7 @@ void Camera::drawWieldedTool(irr::core::matrix4* translation)
 	}
 	m_wieldmgr->drawAll();
 }
+*/
 
 void Camera::drawNametags()
 {

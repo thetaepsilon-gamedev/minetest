@@ -130,7 +130,10 @@ public:
 	// Draw the wielded tool.
 	// This has to happen *after* the main scene is drawn.
 	// Warning: This clears the Z buffer.
+	/*
 	void drawWieldedTool(irr::core::matrix4* translation=NULL);
+	*/
+	inline void drawWieldedTool(irr::core::matrix4* translation=NULL) {}
 
 	// Toggle the current camera mode
 	void toggleCameraMode() {
