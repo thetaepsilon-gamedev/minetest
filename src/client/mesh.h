@@ -26,7 +26,7 @@ with this program; if not, write to the Free Software Foundation, Inc.,
  * Applies shading to a color based on the surface's
  * normal vector.
  */
-void applyFacesShading(video::SColor &color, const v3f &normal);
+inline void applyFacesShading(video::SColor &color, const v3f &normal) {}
 
 /*
 	Create a new cube mesh.

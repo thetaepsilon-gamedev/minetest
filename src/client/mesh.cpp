@@ -42,9 +42,10 @@ inline static void applyShadeFactor(video::SColor& color, float factor)
 	color.setBlue(core::clamp(core::round32(color.getBlue()*factor), 0, 255));
 }
 
+/*
 void applyFacesShading(video::SColor &color, const v3f &normal)
 {
-	/*
+	//
 		Some drawtypes have normals set to (0, 0, 0), this must result in
 		maximum brightness: shade factor 1.0.
 		Shade factors for aligned cube faces are:
@@ -52,7 +53,7 @@ void applyFacesShading(video::SColor &color, const v3f &normal)
 		-Y 0.447213 sqrt(0.2)
 		+-X 0.670820 sqrt(0.45)
 		+-Z 0.836660 sqrt(0.7)
-	*/
+	//
 	float x2 = normal.X * normal.X;
 	float y2 = normal.Y * normal.Y;
 	float z2 = normal.Z * normal.Z;
@@ -61,6 +62,7 @@ void applyFacesShading(video::SColor &color, const v3f &normal)
 	else if ((x2 > 1e-3) || (z2 > 1e-3))
 		applyShadeFactor(color, 0.670820f * x2 + 1.000000f * y2 + 0.836660f * z2);
 }
+*/
 
 scene::IAnimatedMesh* createCubeMesh(v3f scale)
 {
